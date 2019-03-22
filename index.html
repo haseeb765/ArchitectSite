@@ -12,9 +12,9 @@
     <div class="container">
         <!-- NAV -->
         <div class="topnav">
-            <h2>Archi[techs]</h2>
+            <a href="#home" class="logo"><span><b>Archi </b></span>[techs]</a>
 
-            <nav class="topnav">
+            <nav class="pages">
             <a href="#projects">Projects</a>
             <a href="#about">About</a>
             <a href="#contacts">Contact</a>
@@ -22,21 +22,24 @@
         </div>
 
         <!-- Showcase -->
-        <header class="showcase" style="max-width:1500px;" id="home">
-            <h1>Archi[techs]</h1>
+        <header class="showcase" id="home">
+            <h1><span><b>Archi </b></span>[techs]</h1>
         </header>
 
         <!-- Projects -->
-        <section class="gallery" id="projects">
+        <section class="Projects" id="projects">
             <h2>Projects</h2>
-            <img src="https://source.unsplash.com/random/200x200" alt="">
-            <img src="https://source.unsplash.com/random/201x200" alt="">
-            <img src="https://source.unsplash.com/random/202x200" alt="">
-            <img src="https://source.unsplash.com/random/203x200" alt="">
-            <img src="https://source.unsplash.com/random/204x200" alt="">
-            <img src="https://source.unsplash.com/random/205x200" alt="">
-            <img src="https://source.unsplash.com/random/206x200" alt="">
-            <img src="https://source.unsplash.com/random/207x200" alt="">
+            <div class="gallery">
+                    <img src="https://source.unsplash.com/random/200x200" alt="">
+                    <img src="https://source.unsplash.com/random/201x200" alt="">
+                    <img src="https://source.unsplash.com/random/202x200" alt="">
+                    <img src="https://source.unsplash.com/random/203x200" alt="">
+                    <img src="https://source.unsplash.com/random/204x200" alt="">
+                    <img src="https://source.unsplash.com/random/205x200" alt="">
+                    <img src="https://source.unsplash.com/random/206x200" alt="">
+                    <img src="https://source.unsplash.com/random/207x200" alt="">
+            </div>
+            
         </section>
 
         <!-- About -->
@@ -46,31 +49,40 @@
             <div class="profiles">
                 <div class="box">
                     <img src="https://source.unsplash.com/200x200/?businessman" alt="">
-                    <h3>name</h3>
-                    <h4>title</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eligendi. Recusandae nisi alias ea!</p>
-                    <a href="#" class="btn">Contact</a>
+                    <div class="inner">
+                        <h3>name</h3>
+                        <h4>title</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eligendi. Recusandae nisi alias ea!</p>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    
                 </div>
                 <div class="box">
                     <img src="https://source.unsplash.com/200x200/?girl,potrait" alt="">
-                    <h3>name</h3>
-                    <h4>title</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eligendi. Recusandae nisi alias ea!</p>
-                    <a href="#" class="btn">Contact</a>
+                    <div class="inner">
+                        <h3>name</h3>
+                        <h4>title</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eligendi. Recusandae nisi alias ea!</p>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
                 </div>
                 <div class="box">
                     <img src="https://source.unsplash.com/200x200/?potrait,girl" alt="">
-                    <h3>name</h3>
-                    <h4>title</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eligendi. Recusandae nisi alias ea!</p>
-                    <a href="#" class="btn">Contact</a>
+                    <div class="inner">
+                        <h3>name</h3>
+                        <h4>title</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eligendi. Recusandae nisi alias ea!</p>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
                 </div>
                 <div class="box">
                     <img src="https://source.unsplash.com/200x200/?girl" alt="">
-                    <h3>name</h3>
-                    <h4>title</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eligendi. Recusandae nisi alias ea!</p>
-                    <a href="#" class="btn">Contact</a>
+                    <div class="inner">
+                        <h3>name</h3>
+                        <h4>title</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eligendi. Recusandae nisi alias ea!</p>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -81,19 +93,20 @@
             <h3>Contact</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate vitae sit illo praesentium.</p>
             <div class="contact-form">
-                <input type="text">
-                <input type="email" name="Email" id="">
-                <input type="text">
-                <input type="text">
-                <input type="submit" value="Send Message">
+                <input type="text" placeholder="Name" name="Name">
+                <input type="email" placeholder="Email" name="Email" id="">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="comment">
             </div>
+            <button type="submit">Send Message</button>
         </section>
-
-        <footer>
-            <p>ArchiTechs, &copy; 2019</p>
-        </footer>
 
     </div>
     <!-- END OF CONTAINER -->
+
+    <footer>
+        <p>ArchiTechs, &copy; 2019</p>
+    </footer>
+    
 </body>
 </html>

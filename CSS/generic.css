@@ -1,15 +1,197 @@
+/* Global */
+
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    line-height: 1.4;
 }
 
-.showcase {
-    background: url(/IMG/architect-architectural-design-architecture-1915906.jpg);
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
+.logo > span, .showcase h1 span {
+    background-color: black;
+    color: #ffffff;
+    padding: 0.2rem 0.4rem;
+    font-style: italic;
 }
+
+section {
+    margin: 40px 20px;
+} 
+
+.gallery img, .box img {
+    width: 100%;
+}
+
+/* TOP NAVIGATION */
+
+.topnav {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'logo space space pages';
+    box-shadow: 0 2px 2px -2px gray;
+    padding-bottom: 0.2rem;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: black;
+}
+.logo {
+    grid-area: logo;
+    grid-column: 1;
+    align-self: start;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.logo > span:hover {
+    color: cyan;
+}
+
+
+.pages {
+    grid-area: pages;
+    display: flex;
+}
+
+.pages a {
+    flex: 1;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.pages a:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+/* SHOWCASE */
+
+.showcase {
+    min-height: 400px;
+    background: url(/IMG/architect-architectural-design-architecture-1915906.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase h1 {
+    background-color: rgba(211, 211, 211, 0.651);
+}
+
+/* PROJECTS SECTION */
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, minmax(auto-fit, 1fr));
+}
+
+/* ABOUT SECTION */
+
+.profiles {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, minmax(auto-fit, 1fr));
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    text-transform: capitalize;
+}
+
+.box h4 {
+    color: darkgrey;
+    font-style: oblique;
+}
+
+.btn {
+    text-decoration: none;
+    background: rgb(231, 231, 231);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.btn:hover {
+    background: rgb(192, 192, 192);
+}
+
+/* CONTACTS */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.contacts button {
+    background: black;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 1em;
+}
+
+.contacts button:hover {
+    background: #dddddd;
+    color: black;
+    cursor: pointer;
+}
+
+footer {
+    background: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+}
+
+
+@media(min-width: 300px){
+    .gallery {
+        grid-template-areas: 
+        'image'
+    }
+
+    .profiles {
+        grid-template-areas: 
+        'box'
+    }
+
+}
+
+@media(min-width: 500px){
+    .gallery {
+        grid-template-areas: 
+        'image image'
+    }
+    .profiles {
+        grid-template-areas: 
+        'box box'
+    }
+}
+
+@media(min-width: 768px){
+    .gallery {
+        grid-template-areas: 
+        'image image image image'
+    }
+
+    .profiles {
+        grid-template-areas: 
+        'box box box box'
+    }
+}
+
+
